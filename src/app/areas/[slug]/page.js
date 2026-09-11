@@ -16,8 +16,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  const area = areas.find((a) => a.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const area = areas.find((a) => a.slug === resolvedParams.slug);
   if (!area) return { title: 'Area Not Found' };
   return {
     title: `${area.name} Dubai Properties & Projects | Two Roots Realty`,
@@ -25,8 +26,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function AreaDetailPage({ params }) {
-  const area = areas.find((a) => a.slug === params.slug);
+export default async function AreaDetailPage({ params }) {
+  const resolvedParams = await params;
+  const area = areas.find((a) => a.slug === resolvedParams.slug);
 
   if (!area) {
     notFound();
@@ -52,6 +54,7 @@ export default function AreaDetailPage({ params }) {
           fill 
           priority 
           className={styles.heroImage} 
+          unoptimized
         />
         <div className={styles.heroOverlay}></div>
         <div className={`container ${styles.heroContent}`}>
@@ -163,7 +166,7 @@ export default function AreaDetailPage({ params }) {
             <div className={styles.galleryGrid}>
               {area.gallery.slice(0, 3).map((img, i) => (
                 <div key={i} className={styles.galleryImgWrapper}>
-                  <Image src={img} alt={`Gallery ${i}`} fill className={styles.galleryImg} />
+                  <Image src={img} alt={`Gallery ${i}`} fill className={styles.galleryImg} unoptimized />
                 </div>
               ))}
             </div>

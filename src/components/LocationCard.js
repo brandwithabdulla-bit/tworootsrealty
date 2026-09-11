@@ -12,6 +12,7 @@ export default function LocationCard({ location }) {
           fill 
           className={styles.image}
           sizes="(max-width: 768px) 100vw, 50vw"
+          unoptimized
         />
         <div className={styles.overlay}></div>
       </div>
