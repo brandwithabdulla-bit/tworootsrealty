@@ -1,0 +1,445 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid transparent;
+  z-index: 100;
+  transition: background 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, padding 0.4s ease, backdrop-filter 0.4s ease;
+  padding: 1.25rem 0;
+  color: var(--white);
+}
+
+.scrolled {
+  padding: 0.75rem 0;
+  background: #000000;
+  backdrop-filter: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.transparent {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 101;
+}
+
+.desktopLinks {
+  display: none;
+}
+
+.desktopActions {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktopLinks {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .desktopActions {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}
+
+.navLink {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Dropdown Setup */
+.dropdown {
+  position: relative;
+  /* Add padding to prevent gap when hovering */
+  padding-bottom: 20px;
+  margin-bottom: -20px; 
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(8, 18, 30, 0.95);
+  backdrop-filter: blur(10px);
+  min-width: 200px;
+  padding: 1rem 0;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text in dropdown */
+.dropdownMenu, .transparent .dropdownMenu {
+  color: var(--white);
+}
+
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownMenu a {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--soft-ivory);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdownMenu a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--warm-sand);
+}
+
+/* Buttons */
+.primaryBtn {
+  background-color: var(--warm-sand);
+  color: var(--midnight-navy);
+  padding: 10px 24px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  border-radius: 2px;
+  border: 1px solid var(--warm-sand);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.primaryBtn:hover {
+  background-color: transparent;
+  color: var(--warm-sand);
+}
+
+.transparent .primaryBtn {
+  background-color: var(--white);
+  color: var(--midnight-navy);
+  border-color: var(--white);
+}
+
+.transparent .primaryBtn:hover {
+  background-color: transparent;
+  color: var(--white);
+}
+
+/* Mobile Toggle */
+.mobileToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 102;
+}
+
+@media (min-width: 1024px) {
+  .mobileToggle {
+    display: none;
+  }
+}
+
+.bar {
+  width: 24px;
+  height: 2px;
+  background-color: currentColor;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.barOpen1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.barOpen2 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background-color: var(--midnight-navy);
+  color: var(--white);
+  z-index: 100;
+  transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 100px 2rem 2rem;
+  overflow-y: auto;
+}
+
+.mobileMenuOpen {
+  right: 0;
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mobileLinks a {
+  font-size: 1.5rem;
+  font-family: var(--font-secondary);
+  color: var(--white);
+  transition: color 0.3s;
+}
+
+.mobileLinks a:hover {
+  color: var(--warm-sand);
+}
+
+/* Mega Menu Setup */
+.megaMenuTrigger {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+}
+
+.megaMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: rgba(8, 18, 30, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 700px;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  z-index: 100;
+}
+
+.megaMenu, .transparent .megaMenu {
+  color: var(--white);
+}
+
+.megaMenuTrigger:hover .megaMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.megaMenuSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.megaMenuSection h4 {
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  color: var(--warm-sand);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.megaMenuSection a {
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s, padding-left 0.2s;
+}
+
+.megaMenuSection a:hover {
+  color: var(--warm-sand);
+  padding-left: 5px;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(8, 18, 30, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+}
+
+.modalContent {
+  background-color: var(--white);
+  padding: 3rem 2.5rem;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 2px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--deep-navy);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}
+
+.modalContent h3 {
+  font-size: 1.8rem;
+  color: var(--midnight-navy);
+  margin-bottom: 0.5rem;
+}
+
+.modalContent p {
+  font-size: 0.9rem;
+  color: rgba(15, 38, 69, 0.6);
+  margin-bottom: 2rem;
+}
+
+.callbackForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.callbackForm input,
+.callbackForm select {
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(15, 38, 69, 0.2);
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--deep-navy);
+  background-color: #f9f9f9;
+}
+
+.callbackForm input:focus,
+.callbackForm select:focus {
+  outline: none;
+  border-color: var(--warm-sand);
+  background-color: var(--white);
+}
+
+.submitBtn {
+  background-color: var(--midnight-navy);
+  color: var(--white);
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: var(--warm-sand);
+  color: var(--midnight-navy);
+}
+
+.whatsappBtn {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  z-index: 101;
+}
+
+.logoImage {
+  height: auto;
+  object-fit: contain;
+}
+
+.mobilePrimaryBtn {
+  background-color: var(--warm-sand);
+  color: var(--midnight-navy);
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-top: 2rem;
+  cursor: pointer;
+}

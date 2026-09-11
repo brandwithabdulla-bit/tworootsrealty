@@ -1,0 +1,131 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(15, 38, 69, 0.03);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(15, 38, 69, 0.08);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  display: block;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.tags {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+}
+
+.statusTag {
+  background-color: var(--midnight-navy);
+  color: var(--soft-ivory);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+.priceOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 1.5rem 1rem;
+  background: linear-gradient(to top, rgba(8, 18, 30, 0.9) 0%, transparent 100%);
+  z-index: 2;
+}
+
+.price {
+  color: var(--soft-ivory);
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+}
+
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.developer {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--warm-sand);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: var(--deep-navy);
+  line-height: 1.2;
+  transition: color 0.3s;
+}
+
+.card:hover .title {
+  color: var(--warm-sand);
+}
+
+.location {
+  font-size: 0.9rem;
+  color: rgba(15, 38, 69, 0.6);
+}
+
+.specs {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(15, 38, 69, 0.08);
+  margin-top: auto;
+}
+
+.specItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.specLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(15, 38, 69, 0.5);
+}
+
+.specValue {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--deep-navy);
+}

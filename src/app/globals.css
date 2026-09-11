@@ -1,13 +1,17 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Brand Colors */
+  --deep-navy: #0F2645;
+  --warm-sand: #E0CCB5;
+  --soft-ivory: #F4F5F0;
+  --midnight-navy: #08121E;
+  
+  /* Additional UI Colors */
+  --white: #FFFFFF;
+  
+  /* Radii */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
 }
 
 html {
@@ -24,9 +28,9 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--deep-navy);
+  background: var(--soft-ivory);
+  font-family: var(--font-bdo), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,8 +46,19 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Typography Basics */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.secondary-font {
+  font-family: var(--font-cormorant), serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5%;
 }

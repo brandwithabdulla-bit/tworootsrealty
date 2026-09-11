@@ -1,0 +1,165 @@
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.carouselTrack {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* Spacing logic to align the first item with the main container */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 1.5rem;
+}
+
+.carouselTrack::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .carouselTrack {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Aligns with our typical max-width container if needed, but 10vw is a good generic offset for premium layout */
+  .carouselTrack {
+    padding-left: max(5vw, calc((100vw - 1200px) / 2));
+    padding-right: 5vw;
+    gap: 2.5rem;
+  }
+}
+
+.carouselItem {
+  flex: 0 0 85%; /* Mobile: show 1 card + peek */
+  scroll-snap-align: center;
+  transition: opacity 0.4s ease;
+  min-height: 450px;
+}
+
+@media (min-width: 768px) {
+  .carouselItem {
+    flex: 0 0 55%; /* Tablet: show ~1.5 cards */
+    scroll-snap-align: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carouselItem {
+    flex: 0 0 32%; /* Desktop: show ~3 cards */
+    min-height: 550px;
+  }
+}
+
+.activeItem {
+  opacity: 1;
+}
+
+/* Make non-active items slightly faded on desktop to emphasize the primary one */
+@media (min-width: 1024px) {
+  .carouselItem:not(.activeItem) {
+    opacity: 0.7;
+    filter: grayscale(20%);
+  }
+  .carouselItem:not(.activeItem):hover {
+    opacity: 1;
+    filter: grayscale(0%);
+  }
+}
+
+/* Navigation & Progress */
+.navigationArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(15, 38, 69, 0.1);
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+  max-width: 500px;
+}
+
+.progressNumbers {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  color: var(--deep-navy);
+}
+
+.currentNumber {
+  font-weight: 600;
+}
+
+.totalNumber {
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.progressBarBg {
+  flex: 1;
+  height: 2px;
+  background-color: rgba(15, 38, 69, 0.1);
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--deep-navy);
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  margin-left: 2rem;
+}
+
+.controlBtn {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px; /* subtle curve instead of full circle pill */
+  border: 1px solid rgba(15, 38, 69, 0.2);
+  background-color: transparent;
+  color: var(--deep-navy);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controlBtn:hover:not(:disabled) {
+  background-color: var(--deep-navy);
+  color: var(--warm-sand);
+  border-color: var(--deep-navy);
+}
+
+.controlBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

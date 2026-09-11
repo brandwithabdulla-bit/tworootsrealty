@@ -1,0 +1,186 @@
+.main {
+  padding-top: 100px;
+  padding-bottom: 8rem;
+  background-color: var(--soft-ivory);
+}
+
+.hero {
+  position: relative;
+  padding: 6rem 0;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroLabel {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(15, 38, 69, 0.6);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  color: var(--deep-navy);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 5rem;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: rgba(15, 38, 69, 0.8);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.imageBanner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  min-height: 400px;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .imageBanner {
+    height: 70vh;
+  }
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 6rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--deep-navy);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: rgba(15, 38, 69, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.textHighlight {
+  font-family: var(--font-secondary);
+  font-size: 1.75rem;
+  line-height: 1.4;
+  color: var(--deep-navy);
+  margin: 3rem 0;
+  padding-left: 2rem;
+  border-left: 2px solid var(--warm-sand);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.teamMember {
+  display: flex;
+  flex-direction: column;
+}
+
+.teamImage {
+  position: relative;
+  aspect-ratio: 3/4;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.teamName {
+  font-size: 1.75rem;
+  color: var(--deep-navy);
+  margin-bottom: 0.5rem;
+}
+
+.teamRole {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--warm-sand);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.teamBio {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(15, 38, 69, 0.7);
+}
+
+.splitSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-bottom: 6rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .splitSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.splitImage {
+  position: relative;
+  aspect-ratio: 4/5;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.splitContent {
+  padding: 0 1rem;
+}
+
+/* Insights Post Card */
+.postCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.postImageWrapper {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.postImage {
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.postCard:hover .postImage {
+  transform: scale(1.05);
+}

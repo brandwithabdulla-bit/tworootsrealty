@@ -1,0 +1,143 @@
+.main {
+  padding-top: 80px; /* offset for navbar */
+  padding-bottom: 6rem;
+}
+
+.hero {
+  background-color: var(--white);
+  padding: 4rem 0 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(15, 38, 69, 0.05);
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.sidebar {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 300px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 100px;
+  }
+}
+
+.filterBox {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.filterBox h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--deep-navy);
+}
+
+.filterGroup {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterGroup label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  color: rgba(15, 38, 69, 0.7);
+  font-weight: 500;
+}
+
+.filterGroup select {
+  padding: 0.75rem;
+  border: 1px solid rgba(15, 38, 69, 0.2);
+  border-radius: var(--radius-sm);
+  background-color: var(--soft-ivory);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  outline: none;
+}
+
+.resetBtn {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--deep-navy);
+  color: var(--deep-navy);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.resetBtn:hover {
+  background-color: var(--deep-navy);
+  color: var(--white);
+}
+
+.results {
+  flex: 1;
+}
+
+.resultsHeader {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(15, 38, 69, 0.1);
+  color: rgba(15, 38, 69, 0.8);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px dashed rgba(15, 38, 69, 0.2);
+}
+
+.emptyState h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--deep-navy);
+}
+
+.emptyState button {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--deep-navy);
+  color: var(--deep-navy);
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  cursor: pointer;
+  padding-bottom: 2px;
+}
