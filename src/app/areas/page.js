@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { areas } from '@/data/areas';
 import styles from '@/app/properties/page.module.css';
 import LocationCard from '@/components/LocationCard';
+import SectionHeader from '@/components/SectionHeader';
 
 export default function AreasPage() {
   return (
@@ -18,7 +19,7 @@ export default function AreasPage() {
 
       <div className="container">
         <div className={styles.grid}>
-          {locations.map(loc => (
+          {areas.map(loc => (
             <LocationCard key={loc.id} location={loc} />
           ))}
         </div>
