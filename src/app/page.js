@@ -6,6 +6,7 @@ import ProjectCarousel from '@/components/ProjectCarousel';
 import DeveloperCard from '@/components/DeveloperCard';
 import LocationCard from '@/components/LocationCard';
 import ProjectSearch from '@/components/ProjectSearch';
+import HeroSlideshow from '@/components/HeroSlideshow';
 import { projects } from '@/data/projects';
 import { developers } from '@/data/developers';
 import { areas } from '@/data/areas';
@@ -21,26 +22,19 @@ export default function Home() {
     <main>
       {/* 01 & 02 - Cinematic Hero & Integrated Search */}
       <section className={styles.hero}>
-        <div className={styles.heroImage}>
-          <Image 
-            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop" 
-            alt="Dubai Luxury Real Estate" 
-            fill 
-            priority
-            quality={90}
-            className={styles.heroImgScale}
-          />
-          <div className={styles.heroOverlay}></div>
-        </div>
+        <HeroSlideshow />
         
         <div className={`container ${styles.heroContent}`}>
-          <h1 className={`secondary-font ${styles.heroTitle}`}>
-            Dubai Property. Global Perspective.
-            <span>Personal Guidance.</span>
-          </h1>
-          <p className={styles.heroSubtitle}>
-            Carefully selected properties, transparent advice and personalised guidance — from your first enquiry to final handover.
-          </p>
+          <div className={styles.heroTextColumn}>
+            <span className={styles.heroEyebrow}>DUBAI REAL ESTATE</span>
+            <h1 className={`secondary-font ${styles.heroTitle}`}>
+              Dubai Property.<br/>Global Perspective.
+            </h1>
+            <p className={`secondary-font ${styles.heroAccent}`}>Personal Guidance.</p>
+            <p className={styles.heroSubtitle}>
+              Carefully selected properties, transparent advice and personalised guidance — from your first enquiry to final handover.
+            </p>
+          </div>
           
           <div className={styles.integratedSearch}>
             {/* Server component wrapper for the interactive client search */}

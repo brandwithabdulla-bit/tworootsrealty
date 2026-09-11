@@ -1,0 +1,189 @@
+.slideshowContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+  background-color: var(--midnight-navy);
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slideImage {
+  object-fit: cover;
+  transform: scale(1);
+}
+
+.slideImage.animating {
+  animation: subtleZoom 8s ease-out forwards;
+}
+
+@keyframes subtleZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.03); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slideImage.animating {
+    animation: none;
+  }
+}
+
+/* Gradients */
+.leftGradient, .bottomGradient, .overallDarkness {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.leftGradient {
+  z-index: 3;
+  background: linear-gradient(
+    90deg,
+    rgba(5,12,20,0.85) 0%,
+    rgba(5,12,20,0.65) 25%,
+    rgba(5,12,20,0.35) 50%,
+    rgba(5,12,20,0.10) 78%,
+    rgba(5,12,20,0.18) 100%
+  );
+}
+
+.bottomGradient {
+  z-index: 4;
+  background: linear-gradient(
+    0deg,
+    rgba(5,12,20,0.80) 0%,
+    rgba(5,12,20,0.40) 30%,
+    rgba(5,12,20,0.00) 60%
+  );
+}
+
+.overallDarkness {
+  z-index: 5;
+  background: rgba(5,12,20,0.10);
+}
+
+@media (max-width: 768px) {
+  .leftGradient {
+    background: linear-gradient(
+      90deg,
+      rgba(5,12,20,0.95) 0%,
+      rgba(5,12,20,0.85) 40%,
+      rgba(5,12,20,0.50) 70%,
+      rgba(5,12,20,0.30) 100%
+    );
+  }
+}
+
+/* Controls */
+.controlsContainer {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: none; /* Let clicks pass through empty space */
+}
+
+.controlsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  pointer-events: auto; /* Enable clicks on controls */
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.currentNum {
+  color: var(--warm-sand);
+}
+
+.divider {
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
+
+.totalNum {
+  opacity: 0.7;
+}
+
+.progressContainer {
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--warm-sand);
+  transform-origin: left;
+}
+
+.arrows {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.arrowBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrowBtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.arrowBtn:hover {
+  background: var(--warm-sand);
+  color: var(--midnight-navy);
+  border-color: var(--warm-sand);
+}
+
+@media (max-width: 1024px) {
+  .controlsContainer {
+    display: none; /* Hide on mobile to save space, or reposition */
+  }
+}
