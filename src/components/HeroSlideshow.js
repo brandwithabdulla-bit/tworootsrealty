@@ -19,7 +19,7 @@ const slides = [
   },
   {
     id: 3,
-    url: 'https://images.unsplash.com/photo-1608889476561-6242cb816d1e?q=80&w=2500&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?q=80&w=2500&auto=format&fit=crop',
     alt: 'Luxury Architecture',
     position: 'center center',
   },
@@ -31,7 +31,7 @@ const slides = [
   },
   {
     id: 5,
-    url: 'https://images.unsplash.com/photo-1578308552197-202bc85d166c?q=80&w=2500&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1528702748617-c64d49f918af?q=80&w=2500&auto=format&fit=crop',
     alt: 'Downtown Dubai',
     position: 'right center',
   }
@@ -79,7 +79,7 @@ export default function HeroSlideshow() {
               alt={slide.alt}
               fill
               priority={index === 0}
-              quality={90}
+              unoptimized
               className={`${styles.slideImage} ${isActive ? styles.animating : ''}`}
               style={{ objectPosition: slide.position }}
             />

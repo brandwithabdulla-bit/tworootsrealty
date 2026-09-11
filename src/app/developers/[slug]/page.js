@@ -15,17 +15,19 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  const developer = developers.find((d) => d.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const developer = developers.find((d) => d.slug === resolvedParams.slug);
   if (!developer) return { title: 'Developer Not Found' };
   return {
-    title: `${developer.name} Projects in Dubai | Two Roots Realty`,
+    title: `${developer.name} | Top Dubai Developers | Two Roots Realty`,
     description: developer.shortDescription,
   };
 }
 
-export default function DeveloperDetailPage({ params }) {
-  const developer = developers.find((d) => d.slug === params.slug);
+export default async function DeveloperDetailPage({ params }) {
+  const resolvedParams = await params;
+  const developer = developers.find((d) => d.slug === resolvedParams.slug);
 
   if (!developer) {
     notFound();
@@ -48,11 +50,12 @@ export default function DeveloperDetailPage({ params }) {
           fill 
           priority 
           className={styles.heroImage} 
+          unoptimized
         />
         <div className={styles.heroOverlay}></div>
         <div className={`container ${styles.heroContent}`}>
           <div className={styles.logoWrapper}>
-            <Image src={developer.logo} alt={developer.name} fill className={styles.devLogo} />
+            <Image src={developer.logo} alt={developer.name} fill className={styles.devLogo} unoptimized />
           </div>
           <h1 className={`secondary-font ${styles.title}`}>{developer.name}</h1>
           <p className={styles.subtitle}>Transforming the Dubai Skyline</p>

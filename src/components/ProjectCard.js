@@ -14,6 +14,7 @@ export default function ProjectCard({ project }) {
           fill 
           className={styles.image}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          unoptimized
         />
         <div className={styles.overlay}></div>
         <div className={styles.tags}>

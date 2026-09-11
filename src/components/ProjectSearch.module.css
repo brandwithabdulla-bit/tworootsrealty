@@ -1,8 +1,8 @@
 .searchContainer {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(8, 18, 30, 0.75);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 1.5rem;
   border-radius: 12px;
   width: 100%;
@@ -37,8 +37,8 @@
   font-family: inherit;
   font-size: 1rem;
   color: var(--white);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(8, 18, 30, 0.5);
   border-radius: 6px;
   transition: border-color 0.3s, background-color 0.3s;
 }
@@ -63,9 +63,9 @@
   flex: 1;
   min-width: 140px;
   padding: 1rem 1.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(8, 18, 30, 0.5);
   font-family: inherit;
   font-size: 0.9rem;
   color: var(--white);
@@ -86,7 +86,7 @@
 .filterSelect:focus {
   outline: none;
   border-color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(8, 18, 30, 0.8);
 }
 
 .searchBtn {
@@ -172,10 +172,10 @@
 
 @media (max-width: 768px) {
   .searchContainer {
-    background-color: rgba(8, 18, 30, 0.68);
+    background-color: rgba(8, 18, 30, 0.85);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.20);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 1.25rem;
     border-radius: 10px;
   }

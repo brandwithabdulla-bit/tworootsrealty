@@ -10,11 +10,12 @@ export default function Footer() {
         <div className={styles.topSection}>
           <div className={styles.brandSection}>
             <Image 
-              src="/logo-final-black.png" 
+              src="/logo.png" 
               alt="Two Roots Realty" 
               width={180} 
               height={45} 
               className={styles.logoImage} 
+              unoptimized
             />
             <p className={styles.tagline}>Dubai Property. Global Perspective.</p>
           </div>

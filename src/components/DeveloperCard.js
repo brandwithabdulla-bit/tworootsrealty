@@ -12,6 +12,7 @@ export default function DeveloperCard({ developer }) {
           fill 
           className={styles.image}
           sizes="(max-width: 768px) 100vw, 33vw"
+          unoptimized
         />
         <div className={styles.overlay}></div>
       </div>

@@ -13,8 +13,9 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }) {
-  const project = projects.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const project = projects.find((p) => p.slug === resolvedParams.slug);
   if (!project) return { title: 'Project Not Found' };
   return {
     title: `${project.name} | Dubai Property | Two Roots Realty`,
@@ -22,8 +23,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function ProjectDetailPage({ params }) {
-  const project = projects.find((p) => p.slug === params.slug);
+export default async function ProjectDetailPage({ params }) {
+  const resolvedParams = await params;
+  const project = projects.find((p) => p.slug === resolvedParams.slug);
 
   if (!project) {
     notFound();
@@ -42,6 +44,7 @@ export default function ProjectDetailPage({ params }) {
           fill 
           priority 
           className={styles.heroImage} 
+          unoptimized
         />
         <div className={styles.heroOverlay}></div>
         <div className={`container ${styles.heroContent}`}>
@@ -148,7 +151,7 @@ export default function ProjectDetailPage({ params }) {
             <div className={styles.galleryGrid}>
               {project.gallery.slice(0, 3).map((img, i) => (
                 <div key={i} className={styles.galleryImgWrapper}>
-                  <Image src={img} alt={`Gallery ${i}`} fill className={styles.galleryImg} />
+                  <Image src={img} alt={`Gallery ${i}`} fill className={styles.galleryImg} unoptimized />
                 </div>
               ))}
             </div>
@@ -168,7 +171,7 @@ export default function ProjectDetailPage({ params }) {
                     <p>Price: {fp.price}</p>
                   </div>
                   <div className={styles.fpImage}>
-                    <Image src={fp.image} alt={fp.type} fill className={styles.imgCover} />
+                    <Image src={fp.image} alt={fp.type} fill className={styles.imgCover} unoptimized />
                   </div>
                 </div>
               ))}
