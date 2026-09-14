@@ -19,18 +19,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q1 2026",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Downtown Dubai by Emaar Properties. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Downtown Dubai by Emaar Properties. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -145,18 +145,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q2 2027",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Palm Jumeirah by Nakheel. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Palm Jumeirah by Nakheel. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -271,18 +271,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q3 2028",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Dubai Marina by DAMAC Properties. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Dubai Marina by DAMAC Properties. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -397,18 +397,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q4 2026",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Business Bay by Sobha Realty. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Business Bay by Sobha Realty. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -523,18 +523,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q1 2027",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Dubai Hills Estate by Omniyat. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Dubai Hills Estate by Omniyat. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -649,18 +649,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q2 2028",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Dubai Creek Harbour by Meraas. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Dubai Creek Harbour by Meraas. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -775,18 +775,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q3 2026",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Palm Jebel Ali by Select Group. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Palm Jebel Ali by Select Group. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -901,18 +901,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q4 2027",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Dubai Islands by Ellington Properties. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Dubai Islands by Ellington Properties. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -1027,18 +1027,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q1 2028",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Meydan by Binghatti. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Meydan by Binghatti. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -1153,18 +1153,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q2 2026",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Dubai South by Danube Properties. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Dubai South by Danube Properties. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -1279,18 +1279,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q3 2027",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Al Furjan by Azizi Developments. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Al Furjan by Azizi Developments. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",
@@ -1405,18 +1405,18 @@ export const projects = [
     "paymentPlan": "60/40",
     "handover": "Q4 2028",
     "areaFrom": "750 sq. ft.",
-    "heroImage": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
+    "heroImage": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
     "images": [
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop"
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop"
     ],
     "shortDescription": "An architectural marvel in Jumeirah Village Circle by Nshama. Offering resort-style living with panoramic views.",
     "description": "An architectural marvel in Jumeirah Village Circle by Nshama. Offering resort-style living with panoramic views. This premium development offers an unparalleled lifestyle combining luxury, convenience, and modern architecture.",

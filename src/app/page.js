@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/Button';
@@ -16,7 +17,7 @@ export default function Home() {
   const featuredProjects = projects.filter(p => p.featured).slice(0, 6);
   const selectedOpportunities = projects.slice(0, 3);
   const topDevelopers = developers.slice(0, 6);
-  const topLocations = areas.slice(0, 4);
+  const topLocations = areas.slice(0, 8);
 
   return (
     <main>
@@ -56,9 +57,26 @@ export default function Home() {
           
           <div className={styles.selectedOpportunitiesGrid}>
             {selectedOpportunities.map((project, i) => (
-              <div key={project.id} className={`${styles.opportunityCard} ${i === 0 ? styles.featuredOpportunity : ''}`}>
-                <ProjectCard project={project} />
-              </div>
+              <React.Fragment key={project.id}>
+                {i === 2 && (
+                  <div className={styles.curatedMessageBlock}>
+                    <span className={styles.curatedMessageLabel}>Exclusive Collection</span>
+                    <h3 className={`secondary-font ${styles.curatedMessageTitle}`}>
+                      Discover True Luxury
+                    </h3>
+                    <p className={styles.curatedMessageText}>
+                      Our curated portfolio represents the pinnacle of Dubai real estate. 
+                      Hand-selected for exceptional quality, prime location, and outstanding investment potential.
+                    </p>
+                    <Button href="/projects" variant="primary" className={styles.curatedMessageBtn}>
+                      Explore All Projects
+                    </Button>
+                  </div>
+                )}
+                <div className={`${styles.opportunityCard} ${i === 0 ? styles.featuredOpportunity : ''}`}>
+                  <ProjectCard project={project} />
+                </div>
+              </React.Fragment>
             ))}
           </div>
         </div>
@@ -171,27 +189,46 @@ export default function Home() {
 
       {/* 09 - INVESTMENT PERSPECTIVE */}
       <section className={styles.investmentSection}>
+        <div className={styles.investmentBgWrapper}>
+          <Image 
+            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop" 
+            alt="Dubai Skyline" 
+            fill 
+            className={styles.investmentBg}
+          />
+          <div className={styles.investmentOverlay}></div>
+        </div>
+        
         <div className={`container ${styles.investmentContent}`}>
-          <span className={styles.sectionLabelDark}>Global Appeal</span>
-          <h2 className={`secondary-font ${styles.investmentTitle}`}>Invest With Perspective.</h2>
-          <p className={styles.investmentText}>
-            Dubai continues to offer an investor-friendly environment with strong infrastructure growth, capital appreciation potential, and transparent market regulations.
-          </p>
-          <div className={styles.investmentStats}>
-            <div className={styles.stat}>
-              <span className={styles.statNumber}>0%</span>
-              <span className={styles.statLabel}>Property Tax</span>
+          <div className={styles.investmentGrid}>
+            <div className={styles.investmentTextColumn}>
+              <span className={styles.sectionLabelDark}>Global Appeal</span>
+              <h2 className={`secondary-font ${styles.investmentTitle}`}>Invest With Perspective.</h2>
+              <p className={styles.investmentText}>
+                Dubai continues to offer an investor-friendly environment with strong infrastructure growth, capital appreciation potential, and transparent market regulations.
+              </p>
+              <Button href="/contact" variant="primary" className={styles.investmentBtn}>Speak to an Investment Advisor</Button>
             </div>
-            <div className={styles.stat}>
-              <span className={styles.statNumber}>10 yr</span>
-              <span className={styles.statLabel}>Golden Visa</span>
-            </div>
-            <div className={styles.stat}>
-              <span className={styles.statNumber}>High</span>
-              <span className={styles.statLabel}>Rental Yields</span>
+            
+            <div className={styles.investmentStatsColumn}>
+              <div className={styles.glassCard}>
+                <div className={styles.statItem}>
+                  <span className={styles.statNumber}>0%</span>
+                  <span className={styles.statLabel}>Property Tax</span>
+                </div>
+                <div className={styles.statDivider}></div>
+                <div className={styles.statItem}>
+                  <span className={styles.statNumber}>10 yr</span>
+                  <span className={styles.statLabel}>Golden Visa</span>
+                </div>
+                <div className={styles.statDivider}></div>
+                <div className={styles.statItem}>
+                  <span className={styles.statNumber}>High</span>
+                  <span className={styles.statLabel}>Rental Yields</span>
+                </div>
+              </div>
             </div>
           </div>
-          <Button href="/investment" variant="primary">Speak to an Investment Advisor</Button>
         </div>
       </section>
 

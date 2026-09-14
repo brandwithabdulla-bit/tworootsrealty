@@ -3,12 +3,21 @@ import Image from 'next/image';
 import { blog } from '@/data/blog';
 import styles from './page.module.css';
 
-export default function MediaHub() {
-  const featuredPost = blog[0];
-  const secondaryPosts = blog.slice(1, 4);
-  const remainingPosts = blog.slice(4);
+export default async function MediaHub({ searchParams }) {
+  const resolvedParams = await searchParams;
+  const categoryFilter = resolvedParams?.category?.toLowerCase();
+  
+  // Filter blog posts based on category
+  let displayedPosts = blog;
+  if (categoryFilter && categoryFilter !== 'all media') {
+    displayedPosts = blog.filter(p => p.category.toLowerCase().replace(' ', '-') === categoryFilter || p.category.toLowerCase() === categoryFilter);
+  }
 
-  const categories = ['All', 'Insights', 'Market Updates', 'Investment', 'Buying Guides', 'News'];
+  const featuredPost = displayedPosts[0];
+  const secondaryPosts = displayedPosts.slice(1, 4);
+  const remainingPosts = displayedPosts.slice(4);
+
+  const categories = ['All Media', 'Blogs', 'Investment Insights'];
 
   return (
     <main className={styles.main}>
@@ -24,11 +33,15 @@ export default function MediaHub() {
 
       <div className={styles.filterBar}>
         <div className={`container ${styles.filterContainer}`}>
-          {categories.map((cat, idx) => (
-            <button key={idx} className={`${styles.filterBtn} ${idx === 0 ? styles.activeFilter : ''}`}>
-              {cat}
-            </button>
-          ))}
+          {categories.map((cat, idx) => {
+            const isActive = categoryFilter ? (cat.toLowerCase().replace(' ', '-') === categoryFilter || cat.toLowerCase() === categoryFilter) : cat === 'All Media';
+            const href = cat === 'All Media' ? '/insights' : `/insights?category=${cat.toLowerCase().replace(' ', '-')}`;
+            return (
+              <Link href={href} key={idx} className={`${styles.filterBtn} ${isActive ? styles.activeFilter : ''}`}>
+                {cat}
+              </Link>
+            );
+          })}
         </div>
       </div>
 

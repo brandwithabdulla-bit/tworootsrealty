@@ -1,9 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import { useRouter, usePathname } from 'next/navigation';
+import { projects } from '@/data/projects';
 import styles from './ProjectSearch.module.css';
 
 export default function ProjectSearch({ onFilterChange, initialFilters = {} }) {
+  const router = useRouter();
+  const pathname = usePathname();
+
   const [filters, setFilters] = useState({
     search: '',
     type: '',
@@ -54,9 +60,96 @@ export default function ProjectSearch({ onFilterChange, initialFilters = {} }) {
     if (onFilterChange) onFilterChange(clearedFilters);
   };
 
-  const propertyTypes = ['Apartments', 'Villas', 'Townhouses', 'Penthouses', 'Commercial'];
+  const [isNavigating, setIsNavigating] = useState(false);
+  const [noResults, setNoResults] = useState(false);
+
+  const handleSearchClick = () => {
+    setNoResults(false);
+    
+    // Check if the current filters yield any results
+    const hasResults = projects.some(project => {
+      let matches = true;
+      if (filters.search) {
+        const searchLower = filters.search.toLowerCase();
+        const searchMatch = 
+          project.name.toLowerCase().includes(searchLower) ||
+          project.location.toLowerCase().includes(searchLower) ||
+          project.developer.toLowerCase().includes(searchLower);
+        matches = matches && searchMatch;
+      }
+      if (filters.type) {
+        const typeMatch = project.propertyTypes.some(type => 
+          type.toLowerCase().includes(filters.type.toLowerCase())
+        );
+        matches = matches && typeMatch;
+      }
+      if (filters.bedrooms) {
+        const beds = filters.bedrooms.toLowerCase().replace(' beds', '').replace('studio', '0');
+        const projectBeds = project.bedrooms.match(/\d+/g);
+        if (projectBeds && projectBeds.length > 0) {
+          if (beds.includes('+')) {
+            const minBeds = parseInt(beds);
+            matches = matches && parseInt(projectBeds[projectBeds.length - 1]) >= minBeds;
+          } else {
+            const targetBeds = parseInt(beds);
+            const hasMatch = projectBeds.some(b => parseInt(b) === targetBeds);
+            matches = matches && hasMatch;
+          }
+        }
+      }
+      if (filters.price) {
+        const priceMatch = project.startingPrice.match(/[\d.]+/);
+        if (priceMatch) {
+          const price = parseFloat(priceMatch[0]);
+          if (filters.price === 'under-1m') matches = matches && price < 1;
+          else if (filters.price === '1m-3m') matches = matches && price >= 1 && price <= 3;
+          else if (filters.price === '3m-5m') matches = matches && price > 3 && price <= 5;
+          else if (filters.price === 'over-5m') matches = matches && price > 5;
+        }
+      }
+      if (filters.handover) {
+        matches = matches && project.handover.includes(filters.handover);
+      }
+      if (filters.status) {
+        matches = matches && project.status.toLowerCase() === filters.status.toLowerCase();
+      }
+      return matches;
+    });
+
+    if (!hasResults) {
+      setNoResults(true);
+      // Auto-hide the message after 3 seconds
+      setTimeout(() => setNoResults(false), 3000);
+      return; // Do not navigate
+    }
+
+    setIsNavigating(true);
+    const params = new URLSearchParams();
+    Object.entries(filters).forEach(([key, value]) => {
+      if (value) params.append(key, value);
+    });
+    
+    if (pathname === '/projects') {
+      router.push(`/projects?${params.toString()}`);
+      if (onFilterChange) onFilterChange(filters);
+      setTimeout(() => setIsNavigating(false), 300);
+    } else {
+      // From home page, delay navigation so the user actually sees the loading animation briefly
+      setTimeout(() => {
+        router.push(`/projects?${params.toString()}`);
+      }, 300);
+    }
+  };
+
+  // Dynamically generate dropdown options from the actual data
+  const propertyTypes = Array.from(new Set(projects.flatMap(p => p.propertyTypes))).filter(Boolean).sort();
+  const handovers = Array.from(new Set(projects.map(p => {
+    const match = p.handover.match(/\d{4}/);
+    return match ? match[0] : null;
+  }))).filter(Boolean).sort();
+  const statuses = Array.from(new Set(projects.map(p => p.status))).filter(Boolean).sort();
+  
   const bedrooms = ['Studio', '1', '2', '3', '4', '5+'];
-  const handovers = ['2024', '2025', '2026', '2027', '2028+'];
 
   return (
     <div className={styles.searchContainer}>
@@ -71,7 +164,10 @@ export default function ProjectSearch({ onFilterChange, initialFilters = {} }) {
             placeholder="Search location, community or project" 
             className={styles.searchInput}
             value={filters.search}
-            onChange={(e) => handleFilterChange('search', e.target.value, e.target.value)}
+            onChange={(e) => setFilters({...filters, search: e.target.value})}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') handleSearchClick();
+            }}
           />
         </div>
       </div>
@@ -122,12 +218,19 @@ export default function ProjectSearch({ onFilterChange, initialFilters = {} }) {
           onChange={(e) => handleFilterChange('status', e.target.value, e.target.options[e.target.selectedIndex].text)}
         >
           <option value="">Status</option>
-          <option value="off-plan">Off-Plan</option>
-          <option value="ready">Ready</option>
+          {statuses.map(s => <option key={s} value={s.toLowerCase()}>{s}</option>)}
         </select>
         
-        <button className={styles.searchBtn}>SEARCH</button>
+        <button onClick={handleSearchClick} className={styles.searchBtn} disabled={isNavigating}>
+          {isNavigating ? 'SEARCHING...' : 'SEARCH'}
+        </button>
       </div>
+
+      {noResults && (
+        <div className={styles.noResultsMessage}>
+          No projects available matching your criteria. Try adjusting your search.
+        </div>
+      )}
 
       {activeChips.length > 0 && (
         <div className={styles.activeFilters}>
@@ -139,6 +242,18 @@ export default function ProjectSearch({ onFilterChange, initialFilters = {} }) {
           ))}
           <button onClick={clearAll} className={styles.clearBtn}>Clear All</button>
         </div>
+      )}
+
+      {isNavigating && typeof document !== 'undefined' && createPortal(
+        <div className={styles.fullScreenLoader}>
+          <div className={styles.loaderContent}>
+            <h2 className={styles.loaderText}>Looking for the best projects...</h2>
+            <div className={styles.loaderLineContainer}>
+              <div className={styles.loaderLine}></div>
+            </div>
+          </div>
+        </div>,
+        document.body
       )}
     </div>
   );

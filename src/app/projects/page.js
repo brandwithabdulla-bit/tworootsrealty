@@ -1,14 +1,30 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, Suspense, useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import { useSearchParams } from 'next/navigation';
 import SectionHeader from '@/components/SectionHeader';
 import ProjectCard from '@/components/ProjectCard';
 import ProjectSearch from '@/components/ProjectSearch';
 import { projects } from '@/data/projects';
 import styles from './page.module.css'; 
 
-export default function ProjectsListing() {
-  const [filters, setFilters] = useState({});
+function ProjectsContent() {
+  const searchParams = useSearchParams();
+  const [isSearching, setIsSearching] = useState(false);
+  const [displayProjects, setDisplayProjects] = useState([]);
+  
+  const initialFilters = useMemo(() => {
+    const params = {};
+    if (searchParams) {
+      searchParams.forEach((value, key) => {
+        params[key] = value;
+      });
+    }
+    return params;
+  }, [searchParams]);
+
+  const [filters, setFilters] = useState(initialFilters);
 
   const filteredProjects = useMemo(() => {
     return projects.filter(project => {
@@ -24,24 +40,37 @@ export default function ProjectsListing() {
       }
       
       if (filters.type) {
-        matches = matches && project.type.toLowerCase().includes(filters.type.toLowerCase());
+        matches = matches && !!project.propertyTypes?.some(pt => pt.toLowerCase().includes(filters.type.toLowerCase()));
       }
       
       // Simple bedroom match logic
       if (filters.bedrooms) {
-        if (filters.bedrooms === 'Studio') {
-          matches = matches && project.specs.beds.toLowerCase().includes('studio');
-        } else if (filters.bedrooms.includes('+')) {
-          const num = parseInt(filters.bedrooms);
-          const projectBeds = parseInt(project.specs.beds);
-          matches = matches && (projectBeds >= num);
-        } else {
-          matches = matches && project.specs.beds.includes(filters.bedrooms[0]);
+        const beds = filters.bedrooms.toLowerCase().replace(' beds', '').replace('studio', '0');
+        const projectBeds = project.bedrooms.match(/\d+/g);
+        
+        if (projectBeds && projectBeds.length > 0) {
+          if (beds.includes('+')) {
+            const minBeds = parseInt(beds);
+            matches = matches && parseInt(projectBeds[projectBeds.length - 1]) >= minBeds;
+          } else {
+            const targetBeds = parseInt(beds);
+            const hasMatch = projectBeds.some(b => parseInt(b) === targetBeds);
+            matches = matches && hasMatch;
+          }
         }
       }
-      
+      if (filters.price) {
+        const priceMatch = project.startingPrice.match(/[\d.]+/);
+        if (priceMatch) {
+          const price = parseFloat(priceMatch[0]);
+          if (filters.price === 'under-1m') matches = matches && price < 1;
+          else if (filters.price === '1m-3m') matches = matches && price >= 1 && price <= 3;
+          else if (filters.price === '3m-5m') matches = matches && price > 3 && price <= 5;
+          else if (filters.price === 'over-5m') matches = matches && price > 5;
+        }
+      }
       if (filters.handover) {
-        matches = matches && project.handover.includes(filters.handover.replace('+', ''));
+        matches = matches && project.handover.includes(filters.handover);
       }
       
       if (filters.status) {
@@ -52,8 +81,30 @@ export default function ProjectsListing() {
     });
   }, [filters]);
 
+  useEffect(() => {
+    setIsSearching(true);
+    // Increased delay to give the premium full-screen loader time to display nicely
+    const timer = setTimeout(() => {
+      setDisplayProjects(filteredProjects);
+      setIsSearching(false);
+    }, 1200);
+    
+    return () => clearTimeout(timer);
+  }, [filteredProjects]);
+
   return (
     <main className={styles.main}>
+      {isSearching && typeof document !== 'undefined' && createPortal(
+        <div className={styles.fullScreenLoader}>
+          <div className={styles.loaderContent}>
+            <h2 className={`secondary-font ${styles.loaderText}`}>Looking for the best projects...</h2>
+            <div className={styles.loaderLineContainer}>
+              <div className={styles.loaderLine}></div>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
       <div className={styles.heroWrapper}>
         <div className={styles.heroBackground}></div>
         <div className={`container ${styles.heroContent}`}>
@@ -64,13 +115,13 @@ export default function ProjectsListing() {
       
       <div className={styles.searchSection}>
         <div className="container">
-          <ProjectSearch onFilterChange={setFilters} />
+          <ProjectSearch onFilterChange={setFilters} initialFilters={initialFilters} />
         </div>
       </div>
 
-      <div className="container" style={{ padding: '4rem 0 8rem' }}>
+      <div className="container" style={{ paddingTop: '4rem', paddingBottom: '8rem' }}>
         <div className={styles.resultsHeader}>
-          <h2>Showing <strong>{filteredProjects.length}</strong> premium projects</h2>
+          <h2>Showing <strong>{displayProjects.length}</strong> premium projects</h2>
           <div className={styles.sorting}>
             <select>
               <option>Sort by: Recommended</option>
@@ -81,9 +132,9 @@ export default function ProjectsListing() {
           </div>
         </div>
 
-        {filteredProjects.length > 0 ? (
+        {displayProjects.length > 0 ? (
           <div className={styles.grid}>
-            {filteredProjects.map(project => (
+            {displayProjects.map(project => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
@@ -96,5 +147,13 @@ export default function ProjectsListing() {
         )}
       </div>
     </main>
+  );
+}
+
+export default function ProjectsListing() {
+  return (
+    <Suspense fallback={<div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Loading projects...</div>}>
+      <ProjectsContent />
+    </Suspense>
   );
 }

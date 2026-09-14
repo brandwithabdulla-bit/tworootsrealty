@@ -37,8 +37,8 @@ export default function About() {
           </p>
         </div>
 
-        <div className={styles.section} style={{textAlign: 'center', marginTop: '4rem'}}>
-          <Button href="/about/our-story" variant="secondary" style={{marginRight: '1rem'}}>Read Our Story</Button>
+        <div className={`${styles.section} ${styles.buttonGroup}`}>
+          <Button href="/about/our-story" variant="secondary">Read Our Story</Button>
           <Button href="/about/team" variant="primary">Meet The Team</Button>
         </div>
       </div>

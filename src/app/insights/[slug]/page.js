@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { blog } from '@/data/blog';
 import styles from '@/app/editorial.module.css';
 
-export default function InsightDetail({ params }) {
-  const post = blog.find(p => p.slug === params.slug);
+export default async function InsightDetail({ params }) {
+  const resolvedParams = await params;
+  const post = blog.find(p => p.slug === resolvedParams.slug);
 
   if (!post) {
     return <div className="container" style={{paddingTop: '150px'}}>Article not found</div>;

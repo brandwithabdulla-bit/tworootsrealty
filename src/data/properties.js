@@ -22,10 +22,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -55,10 +55,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -88,10 +88,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -121,10 +121,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -154,10 +154,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -187,10 +187,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -220,10 +220,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -253,10 +253,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -286,10 +286,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -319,10 +319,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -352,10 +352,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -385,10 +385,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -418,10 +418,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -451,10 +451,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -484,10 +484,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1613490908592-fd5e43f4e58b?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -517,10 +517,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -550,10 +550,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -583,10 +583,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -616,10 +616,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",
@@ -649,10 +649,10 @@ export const properties = [
       "Sea View"
     ],
     "images": [
-      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2500&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2500&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1526495124232-a04e1849168c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1080&auto=format&fit=crop"
     ],
     "agent": {
       "name": "Muhammed Ashmid",

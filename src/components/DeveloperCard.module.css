@@ -98,3 +98,16 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+  .name,
+  .description,
+  .exploreBtn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .image {
+    opacity: 0.5;
+  }
+}

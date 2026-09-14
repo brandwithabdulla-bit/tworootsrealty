@@ -184,3 +184,11 @@
 .postCard:hover .postImage {
   transform: scale(1.05);
 }
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}

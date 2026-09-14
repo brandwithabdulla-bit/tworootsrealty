@@ -8,6 +8,7 @@ import Image from 'next/image';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileSubmenu, setOpenMobileSubmenu] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isCallbackOpen, setIsCallbackOpen] = useState(false);
   const pathname = usePathname();
@@ -31,7 +32,12 @@ export default function Navbar() {
   // Close mobile menu on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setOpenMobileSubmenu(null);
   }, [pathname]);
+
+  const toggleSubmenu = (menu) => {
+    setOpenMobileSubmenu(openMobileSubmenu === menu ? null : menu);
+  };
 
   const navClass = `${styles.navbar} ${isScrolled ? styles.scrolled : ''} ${!isScrolled && isHomepage ? styles.transparent : ''}`;
 
@@ -103,11 +109,9 @@ export default function Navbar() {
               <span className={styles.navLink}>Media ▾</span>
               <div className={styles.dropdownMenu}>
                 <Link href="/insights">All Media</Link>
-                <Link href="/insights?category=insights">Insights</Link>
-                <Link href="/insights?category=market-updates">Market Updates</Link>
-                <Link href="/insights?category=guides">Real Estate Guides</Link>
+                <Link href="/insights?category=blogs">Blogs</Link>
                 <Link href="/insights?category=investment">Investment Insights</Link>
-                <Link href="/insights?category=news">News / Press</Link>
+                <Link href="/gallery">Gallery</Link>
               </div>
             </div>
 
@@ -134,12 +138,53 @@ export default function Navbar() {
         {/* Mobile Menu Slide Out */}
         <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
           <div className={styles.mobileLinks}>
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/developers">Developers</Link>
-            <Link href="/insights">Media</Link>
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+            
+            <div>
+              <button className={styles.mobileMenuTrigger} onClick={() => toggleSubmenu('about')}>
+                About <span className={openMobileSubmenu === 'about' ? styles.caretOpen : ''}>▾</span>
+              </button>
+              {openMobileSubmenu === 'about' && (
+                <div className={styles.mobileSubmenu}>
+                  <Link href="/about" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+                  <Link href="/about/our-story" onClick={() => setIsMobileMenuOpen(false)}>Our Story</Link>
+                  <Link href="/about/team" onClick={() => setIsMobileMenuOpen(false)}>Founders & Team</Link>
+                </div>
+              )}
+            </div>
+
+            <div>
+              <button className={styles.mobileMenuTrigger} onClick={() => toggleSubmenu('projects')}>
+                Projects <span className={openMobileSubmenu === 'projects' ? styles.caretOpen : ''}>▾</span>
+              </button>
+              {openMobileSubmenu === 'projects' && (
+                <div className={styles.mobileSubmenu}>
+                  <Link href="/projects" onClick={() => setIsMobileMenuOpen(false)}>All Projects</Link>
+                  <Link href="/projects?filter=new" onClick={() => setIsMobileMenuOpen(false)}>New Launches</Link>
+                  <Link href="/projects?status=off-plan" onClick={() => setIsMobileMenuOpen(false)}>Off-Plan Projects</Link>
+                  <Link href="/projects?status=ready" onClick={() => setIsMobileMenuOpen(false)}>Ready Projects</Link>
+                  <Link href="/areas" onClick={() => setIsMobileMenuOpen(false)}>Popular Locations</Link>
+                </div>
+              )}
+            </div>
+
+            <Link href="/developers" onClick={() => setIsMobileMenuOpen(false)}>Developers</Link>
+            
+            <div>
+              <button className={styles.mobileMenuTrigger} onClick={() => toggleSubmenu('media')}>
+                Media <span className={openMobileSubmenu === 'media' ? styles.caretOpen : ''}>▾</span>
+              </button>
+              {openMobileSubmenu === 'media' && (
+                <div className={styles.mobileSubmenu}>
+                  <Link href="/insights" onClick={() => setIsMobileMenuOpen(false)}>All Media</Link>
+                  <Link href="/insights?category=blogs" onClick={() => setIsMobileMenuOpen(false)}>Blogs</Link>
+                  <Link href="/insights?category=investment" onClick={() => setIsMobileMenuOpen(false)}>Investment Insights</Link>
+                  <Link href="/gallery" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
+                </div>
+              )}
+            </div>
+
+            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link>
             <button onClick={() => { setIsMobileMenuOpen(false); setIsCallbackOpen(true); }} className={styles.mobilePrimaryBtn}>Get a Call Back</button>
           </div>
         </div>
